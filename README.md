@@ -10,3 +10,8 @@ The subsequent step involves modelling the plot-level AGB using a chosen LiDAR C
 To generate AGB maps, the script utilizes Monte Carlo simulation to propagate the plot-level errors and the LiDAR-AGB model error. The script has been set up to perform 1000 simulations for this purpose.
 
 Finally, the computed 1000 AGB maps can be merged to obtain site-level meanAGB and sdAGB (standard deviation of AGB) values. This consolidation allows for a comprehensive understanding of the AGB distribution at the site level.
+
+
+The files "McRoberts2022_implementation_04Dec23.R" and "Saarela2020_3pHMB_3pHHY_MC-based_valid_inputs.R" are the implementation of respective papers!
+
+To be updated more after the acceptance of the research paper.
