@@ -9,9 +9,9 @@
 # Load the required packages
 require(BIOMASS)
 require(dplyr)  # Required for data manipulation
+source('metropolis_algo.R') #required for Param4 computation in line 210 
 
 # Part-1 (Plot-AGB Computation) ----
-
 # Since the plot data in the current study is not shared, 
 # we use a sample dataset made available as part of the "BIOMASS" package 
 # for computing plot-level AGB (Aboveground Biomass) and its uncertainty.
@@ -209,6 +209,7 @@ for (i in 1:1000){
 
   param4_site <- param4(datasim$AGB,datasim$Hm) 
   #generating the coefficients of LiDAR-AGB model using Markov chain Monte Carlo algorithm
+  #for more - refer to BIOMASS package.
   
   sel_id <- sample(1:nrow(param4_site),1) #only one sample is selected.
   Ea <- param4_site[sel_id, "intercept"] #selecting the respective intercept of the sample
